@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blazehouse — Flame-grilled, fast.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Blaze<span>house</span></div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="menu.html" rel="noopener">Menu</a>
+      <a href="deals.html" rel="noopener">Deals</a>
+    </div>
+    <a class="nav-cart-btn" href="order.html" rel="noopener">
+      🛒 <span class="cart-text">Order</span> <span class="badge" id="cart-badge">0</span>
+    </a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">Open daily, 7am – 9pm</span>
+      <h1>Flame-grilled.<br>Fast. Loud with flavor.</h1>
+      <p>Burgers, crispy chicken, and fries that don't go soft in the bag. Order in,and dig in!.</p>
+      <div class="hero-ctas">
+        <a href="menu.html" rel="noopener" class="btn btn-yellow">See the menu</a>
+        <a href="deals.html" rel="noopener" class="btn btn-outline">Today's deals</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-stage" id="hero-visual-stage"><!-- filled by hero.js --></div>
+      <div class="visual-tabs">
+        <button class="visual-tab active" data-visual="burger">🍔 Burger</button>
+        <button class="visual-tab" data-visual="chicken">🍗 Chicken</button>
+        <button class="visual-tab" data-visual="fries">🍟 Fries</button>
+        <button class="visual-tab" data-visual="drink">🥤 Drinks</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Why people keep coming back</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="num">🔥</div>
+        <h4>Cooked to order</h4>
+        <p>Every patty and fillet hits the grill after you order — nothing sits under a heat lamp.</p>
+      </div>
+      <div class="why-card">
+        <div class="num">⚡</div>
+        <h4>Ready in 10 minutes</h4>
+        <p>Most orders are ready before you finish parking, without cutting corners on the food.</p>
+      </div>
+      <div class="why-card">
+        <div class="num">🧾</div>
+        <h4>No hidden add-ons</h4>
+        <p>The price on the menu is the price at checkout. Combos always beat ordering separately.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Blazehouse</div>
+    <div class="footer-links">
+      <a href="menu.html" rel="noopener">Menu</a>
+      <a href="deals.html" rel="noopener">Deals</a>
+      <a href="order.html" rel="noopener">Your Order</a>
+      <a href="#">Locations</a>
+    </div>
+  </div>
+  <div class="disclosure">
+<h5>Blazehouse is a restaurant worth visiting, and all the menu's here are premium made with low prices and nice portions.</h5>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="cart.js"></script>
+<script src="data.js"></script>
+<script src="hero.js"></script>
+</body>
+</html>
